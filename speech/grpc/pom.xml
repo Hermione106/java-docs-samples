@@ -26,12 +26,12 @@ limitations under the License.
   <inceptionYear>2016</inceptionYear>
 
   <!-- Parent defines plugins for checkstyle and unit testing. -->
-  <parent>
+  <!-- <parent>
     <groupId>com.google.cloud</groupId>
     <artifactId>doc-samples</artifactId>
     <version>1.0.0</version>
     <relativePath>../..</relativePath>
-  </parent>
+  </parent> -->
 
   <licenses>
     <license>

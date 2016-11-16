@@ -116,7 +116,7 @@ public class StreamingRecognizeClient {
         new StreamObserver<StreamingRecognizeResponse>() {
           @Override
           public void onNext(StreamingRecognizeResponse response) {
-            logger.info("Received response: " + TextFormat.printToString(response));
+            logger.info("Received response: Aradhana_recording " + TextFormat.printToString(response));
           }
 
           @Override

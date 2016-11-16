@@ -50,6 +50,8 @@ import java.util.logging.Logger;
 /**
  * Client that sends audio to Speech.AsyncRecognize and returns transcript.
  */
+
+//bin/speech-sample-async.sh --host=speech.googleapis.com --port=443 --uri=resources/Shortsefl.raw --sampling=16000
 public class AsyncRecognizeClient {
 
   private static final Logger logger = Logger.getLogger(AsyncRecognizeClient.class.getName());
@@ -96,6 +98,7 @@ public class AsyncRecognizeClient {
    * Sends a request to the speech API and returns an Operation handle.
    */
   public void recognize() {
+	 
     RecognitionAudio audio;
     try {
       audio = RecognitionAudioFactory.createRecognitionAudio(this.input);
@@ -151,11 +154,12 @@ public class AsyncRecognizeClient {
     } catch (com.google.protobuf.InvalidProtocolBufferException ex) {
       logger.log(Level.WARNING, "Unpack error, {0}", ex.getMessage());
     }
+    
   }
 
   public static void main(String[] args) throws Exception {
 
-    String audioFile = "";
+    String audioFile = "resources/Shortsefl.raw";
     String host = "speech.googleapis.com";
     Integer port = 443;
     Integer sampling = 16000;
